@@ -1,3 +1,4 @@
 node_modules
-bower_components
-middlewares/auth.json
+client/bower_componenets
+
+server/middlewares/auth.json
