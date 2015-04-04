@@ -9,13 +9,6 @@
     "amd"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "client/libs",
-    "test",
-    "tests"
-  ],
   "devDependencies": {
     "jasmine": "~2.2.1",
     "handlebars": "~3.0.0",

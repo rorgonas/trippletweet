@@ -2,15 +2,67 @@
 <html lang="en">
 <head>
     <title>TrippleTweet App</title>
+
+    <!-- Bootstrap -->
+    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
     <!-- Load the script "js/main.js" as our entry point -->
-    <script data-main="scripts/main" src="scripts/libs/requirejs/require.js"></script>
+    <script data-main="main" src="libs/requirejs/require.js"></script>
 </head>
-<body>
+<body class="app">
 
 <div id="container">
-  <div id="menu"></div>
-  <div id="content"></div>
-</div>
+
+	<nav class="navbar navbar-inverse">
+		<a class="navbar-brand" href="#">Tripple Tweet</a>
+	</nav>
+
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-4 tweets">
+  				<div class="input-group">
+			      <input type="text" class="form-control" placeholder="@AppDirect">
+			      <span class="input-group-btn">	
+			      	<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+			  		</span>
+			    </div>
+  				<ul>
+  					<li>one post</li>
+  					<li>teo post</li>
+  					<li>three post</li>
+  				</ul>
+  			</div>
+  			<div class="col-md-4 tweets">
+  				<div class="input-group">
+			      <input type="text" class="form-control" placeholder="@laughingsquid">
+			      <span class="input-group-btn">	
+			      	<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+			  		</span>
+			    </div>
+  				<ul>
+  					<li>one post</li>
+  					<li>teo post</li>
+  					<li>three post</li>
+  				</ul>
+  			</div>
+  			<div class="col-md-4 tweets">
+  				<div class="input-group">
+			      <input type="text" class="form-control" placeholder="@techcrunch">
+			      <span class="input-group-btn">	
+			      	<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+			  		</span>
+			    </div>
+  				<ul>
+  					<li>one post</li>
+  					<li>teo post</li>
+  					<li>three post</li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+
+</div> <!-- end of body container -->
 
 </body>
 </html>
