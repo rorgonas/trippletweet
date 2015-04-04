@@ -11,11 +11,11 @@ router.get('/tweets/:query', function(req, res){
 	var user = require('../middlewares/user');
 	
 	user.get('search/tweets', {q: query, count: count}, function(error, tweets, response){
-	  	if (!error) {
+	  	if (error) {
+	  		res.send('Error dispalying tweets.');
+	  	} else {
 	  		res.send(tweets);
-	  	}
-
-	  	res.send('We were unable to retrieve your tweets now.');
+	  	}	
 	});
 });
 
