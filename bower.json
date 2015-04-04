@@ -12,7 +12,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "client/bower_componenets",
+    "client/libs",
     "test",
     "tests"
   ],
