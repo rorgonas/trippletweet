@@ -3,7 +3,7 @@ define([
   'backbone',
   'handlebars',
   'tweetListView',
-  'text!../app/tweets/templates/tweetContainer.handlebars'
+  'text!app/tweets/templates/tweetContainer.handlebars'
 ], function($, Backbone, Handlebars, TweetList, TweetContainerTemplate){
 
 	var TweetContainer = Backbone.View.extend({

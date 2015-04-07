@@ -2,7 +2,7 @@ define([
   'jquery',
   'backbone',
   'handlebars',
-  'text!../app/tweets/templates/tweet.handlebars'
+  'text!app/tweets/templates/tweet.handlebars'
 ], function($, Backbone, Handlebars, tweetTemplate){
 
 	var TweetItem = Backbone.View.extend({

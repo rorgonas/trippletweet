@@ -1,18 +1,26 @@
 require.config({
-    baseUrl: 'libs/',
+    baseUrl: '/',
     paths: {
-        jquery:                'jquery/dist/jquery',
-        underscore:            'underscore/underscore',
-        backbone:              'backbone/backbone',
-        handlebars:            'handlebars/handlebars',
-        text:                  'requirejs-text/text',
-        sortable:              'Sortable/Sortable',
-        // jquerysortable:              'Sortable/jquery.binding',
+        jquery:                'libs/jquery/dist/jquery',
+        underscore:            'libs/underscore/underscore',
+        backbone:              'libs/backbone/backbone',
+        handlebars:            'libs/handlebars/handlebars',
+        
+        // Helpers
+        text:                  'libs/requirejs-text/text',
+        
+        // Sortable
+        sortable:              'libs/Sortable/Sortable',
+        
+        // Mock service 
+        mockjax:               'libs/jquery-mockjax/jquery-mockjax',
+        mockservice:           'mock/appMockService',
 
-        app:                   '../app',
-        tweetItemView:         '../app/tweets/views/itemView',
-        tweetListView:         '../app/tweets/views/listView',
-        tweetContainerView:    '../app/tweets/views/containerView'
+        // Modules
+        app:                   'app',
+        tweetItemView:         'app/tweets/views/itemView',
+        tweetListView:         'app/tweets/views/listView',
+        tweetContainerView:    'app/tweets/views/containerView'
     },
     shim: {
         backbone: {
@@ -21,12 +29,15 @@ require.config({
         },
         jquery: {
             exports: '$'
+        },
+        mockjax: {
+            deps: ['jquery'],
+            exports: 'mockjax'
+        },
+        mockservice: {
+            deps: ['jquery', 'mockjax'],
+            exports: 'mockservice'
         }
-        // },
-        // jquerysortable: {
-        //     deps: ['jquery', 'sortable'],
-        //     exports: 'Sortable'
-        // }
     }
 });
 
