@@ -1,0 +1,12 @@
+define([
+	'backbone', 
+	'../models/searchForm'
+], function(Backbone, SearchForm){
+
+	var SearchForms = Backbone.Collection.extend({
+	
+		model: SearchForm
+	});
+
+	return SearchForms
+});

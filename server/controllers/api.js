@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/tweets/:query', function(req, res){
 
 	var	query = req.params.query, //'@AppDirect'
-		count = 1;
+		count = 30;
 
 	var user = require('../middlewares/user');
 	

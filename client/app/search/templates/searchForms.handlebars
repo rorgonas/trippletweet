@@ -1,0 +1,12 @@
+{{#each params}}
+	<div class="col-md-4 tweets group-{{column}}">
+		<!--span class="glyphicon glyphicon-move" aria-hidden="true"></span-->
+		<div class="input-group">
+      		<input type="text" class="form-control" placeholder="{{search}}">
+      		<span class="input-group-btn">	
+      			<button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+  			</span>
+   		</div>
+   		<section class="results"></section>
+	</div>
+{{/each}}

@@ -15,7 +15,8 @@ define([
 			console.log('Render single tweet');
 		},
 		render: function(){
-			this.$el.html(this.template(this.model));
+			var attributes = this.model.attributes;
+			this.$el.html(this.template(attributes));
 			return this;
 		} 
 	});

@@ -57,6 +57,12 @@ ul.tweet-list .tweet-footer label{
 	margin-top: -1px;
 }
 
+.app div.tweets section {
+	max-height: 800px;
+  	overflow-y: scroll;
+  	margin-top: 50px;
+}
+
 .app div.tweets:hover {
 	-webkit-box-shadow: 0px 2px 25px #ededed;
 	-moz-box-shadow: 0px 2px 25px #ededed;

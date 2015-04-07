@@ -12,17 +12,16 @@ define([
 		
 		initialize: function(){
 			console.log('Render multiple tweets');
-			this.collection = [{user: "Foo", content: "I tweet it"}, {user: "Boo", content: "I like it"}];
 		},
 		render: function(){
 			this.addAll();
 		},
-		addOne: function(model, index, collection){
+		addOne: function(model){
 			var itemView = new TweetItemView({model:model});
 			this.$el.append(itemView.render().el);
 		},
 		addAll: function(){
-			_.each(this.collection, this.addOne, this);
+			this.collection.each(this.addOne, this);
 		}
 	});
 

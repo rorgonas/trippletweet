@@ -1,9 +1,9 @@
 define([
     'jquery',
 	'backbone',
-	'tweetContainerView',
+	'searchCollectionView',
     'sortable'
-], function($, Backbone, TweetContainer, Sortable){
+], function($, Backbone, SearchView, Sortable){
     
     var App = Backbone.View.extend({
         
@@ -14,9 +14,8 @@ define([
             this.render();           	
         },
         render: function(){
-            var tweetContainer = new TweetContainer();
-            tweetContainer.render();
-            this.$el.html(tweetContainer.el);
+            var searchView = new SearchView();
+            this.$el.html(searchView.el);
 
             var sortable = Sortable.create(tweetGroup, {animation: 150});
         }

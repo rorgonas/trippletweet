@@ -13,18 +13,19 @@ require.config({
         sortable:              'libs/Sortable/Sortable',
         
         // Mock service 
-        mockjax:               'libs/jquery-mockjax/jquery-mockjax',
+        mockjax:               'libs/jquery-mockjax/jquery.mockjax',
         mockservice:           'mock/appMockService',
 
         // Modules
         app:                   'app',
         tweetItemView:         'app/tweets/views/itemView',
         tweetListView:         'app/tweets/views/listView',
-        tweetContainerView:    'app/tweets/views/containerView'
+        
+        searchCollectionView:  'app/search/views/collectionView'
     },
     shim: {
         backbone: {
-            deps: ['jquery', 'underscore'],
+            deps: ['jquery', 'underscore'/*, 'mockservice'*/],
             exports: 'Backbone'
         },
         jquery: {
