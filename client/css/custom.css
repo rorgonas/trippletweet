@@ -1,3 +1,32 @@
+.glyphicon-move {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+
+ul.tweet-list li {
+	list-style: none;
+	margin-left: -40px;
+	margin-top: 5px;
+  	margin-bottom: 10px;
+  	border-bottom: 1px solid #e1e8ed;
+  	cursor: pointer;
+}
+ul.tweet-list p {
+	margin-left: 60px;
+}
+ul.tweet-list .tweet-header a{
+	  margin-left: 10px;
+}
+ul.tweet-list .tweet-header img.avatar {
+	float: left;
+	width: 48px;
+  	height: 48px;
+  	border-radius: 5px;
+}
+ul.tweet-list .tweet-footer label{
+	margin-left: 5px;
+}
+
 .app .navbar-inverse{
 	background-color: #555;
   	border-color: #555;
