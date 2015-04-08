@@ -21,7 +21,11 @@ require.config({
         tweetItemView:         'app/tweets/views/itemView',
         tweetListView:         'app/tweets/views/listView',
         
-        searchCollectionView:  'app/search/views/collectionView'
+        searchCollectionView:  'app/search/views/collectionView',
+
+        editLayoutView:        'app/settings/views/editLayoutView',
+
+        headerView:            'app/header/views/headerView'
     },
     shim: {
         backbone: {
