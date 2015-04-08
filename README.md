@@ -15,6 +15,7 @@ Tripple Tweet is a simple nodejs app that displays tweets in 3 fluid layouts.
 
 	* Sortable columns buy drag-drop
 	* Toggle layout config panel
+	* Formatted dates
 
 <br/ >
 
@@ -24,6 +25,8 @@ Tripple Tweet is a simple nodejs app that displays tweets in 3 fluid layouts.
 		https://www.npmjs.com/package/twitter
 	* Sortable a minimalist JS lib for reorder drag-and drop lists
 		https://github.com/RubaXa/Sortable
+	* Format dates like Twitter
+		https://github.com/hijonathan/moment.twitter
 
 <br/ >
 

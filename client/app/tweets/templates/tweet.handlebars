@@ -3,11 +3,10 @@
 		<strong>{{user.name}}</strong>
 		<img class="avatar" src="{{user.profile_image_url}}" />
 	</a>
-	<small class="time"><a href="#" title="{{created_at}}">{{created_at}}</a></small>
+	<small class="time"><a href="#" title="{{time}}">{{created_at}}</a></small>
+	<button class="btn btn-default btn-xs pull-right retweet">
+		<span class="glyphicon glyphicon glyphicon-retweet"></span>
+	</button>
 </div>
 <p class="tweet-text">{{text}}</p>
-<!--div class="tweet-footer">
-	<button class="btn btn-default btn-xs">
-		<span class="glyphicon glyphicon glyphicon-retweet retweet"><label>Retweet</label></span>
-	</button>
-</div-->
+<div class="tweet-footer"></div>

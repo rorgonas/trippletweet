@@ -4,7 +4,10 @@ define([
 ], function(Backbone, Tweet){
 
 	var Tweets = Backbone.Collection.extend({
+
+		// Only for tests
 		//url: 'rest/api/tweet',
+		
 		initialize: function(options){
 			this.options = options;
 		},

@@ -23,6 +23,10 @@ ul.tweet-list .tweet-header img.avatar {
   	height: 48px;
   	border-radius: 5px;
 }
+ul.tweet-list .tweet-header .retweet {
+	margin-right: 5px;
+}
+
 ul.tweet-list .tweet-footer label{
 	margin-left: 5px;
 }

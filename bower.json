@@ -19,6 +19,8 @@
     "bootstrap": "~3.3.4",
     "backbone": "~1.1.2",
     "jquery-mockjax": "~1.6.1",
-    "Sortable": "http://rubaxa.github.io/Sortable/Sortable.js"
+    "Sortable": "~1.1.1",
+    "moment": "~2.10.0",
+    "moment.twitter": "~0.2.0"
   }
 }
