@@ -14,6 +14,7 @@ Tripple Tweet is a simple nodejs app that displays tweets in 3 fluid layouts.
 ## Features
 
 	* Sortable columns buy drag-drop
+	* Toggle layout config panel
 
 <br/ >
 
